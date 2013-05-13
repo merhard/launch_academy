@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DogHub . We're like Facebook and GitHub...for dogs</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a class="title" href="#">DogHub</a>
+      </div>
+
+      <div class="commandbar">
+        <input class="search" type="text" name="q" placeholder="Search or type a command" tabindex="1">
+      </div>
+
+      <div class="nav-div">
+        <ul class="nav">
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="sign-in">
+         <a href="#">Sign in</a>
+      </div>
+    </header>
+
+    <div class="top-section">
+      <div class="top-section-content">
+        <form class="signup">
+          <dl class="form">
+            <dd>
+              <input type="text" name="user[login]" class="textfield" placeholder="Pick a username">
+            </dd>
+          </dl>
+
+          <dl class="form-dl">
+            <dd>
+              <input type="text" name="user[email]" class="textfield" placeholder="Your email">
+            </dd>
+          </dl>
+
+          <dl class="form-dl">
+            <dd>
+              <input type="password" name="user[password]" class="textfield" placeholder="Create a password">
+              <p class="note">Tip: use at least one number and at least 7 characters.</p>
+            </dd>
+          </dl>
+
+          <p class="agreement">By clicking on "Sign up for free" below, you agree to the <a href="#">Terms of Service</a> and the <a href="#">Privacy Policy</a>.</p>
+
+          <button class="button" type="submit">Sign up for free</button>
+
+          <p class="plans"><a href="#">See plans and pricing</a></p>
+        </form>
+
+        <h1 class="tagline">We're like Facebook and GitHub...for dogs</h1>
+        <p class="subtagline">Dogs rule, cats drool.</p>
+      </div>
+    </div>
+
+    <div class="middle-stuff">
+      <div>
+        <div class="points">
+          <div class="point">
+            <img class="pic" alt="lost dog" height="200" src="assets/pic1.png" width="225">
+            <h3>Find your long-lost pals.</h3>
+            <p>DogHub allows its members to connect in ways they have never been able to before.</p>
+          </div>
+
+          <div class="point">
+            <img class="pic" alt="cool dog" height="200" src="assets/pic2.png" width="225">
+            <h3>Be cool, join DogHub.</h3>
+            <p>Don't get left out of the pack. All the best-groomed dogs have already signed-up.</p>
+          </div>
+
+          <div class="point">
+            <img class="pic" alt="talking dog" height="200" src="assets/pic3.jpg" width="225">
+            <h3>Yap all you want.</h3>
+            <p>DogHub offers many different ways for its members to communicate with each other.</p>
+          </div>
+        </div>
+      </div>
+
+        <div><p class="plans-callout">Collaborate on private repositories when you <a href="#">sign up for a paid individual or organization plan.</a></p></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <dl class="footer-nav">
+          <dt>DogHub</dt>
+          <dd><a href="#">About us</a></dd>
+          <dd><a href="#">Blog</a></dd>
+          <dd><a href="#">Contact &amp support</a></dd>
+          <dd><a href="#">DogHub Enterprise</a></dd>
+          <dd><a href="#">Site status</a></dd>
+        </dl>
+
+        <dl class="footer-nav">
+          <dt>Applications</dt>
+          <dd><a href="#">DogHub for Mac</a></dd>
+          <dd><a href="#">DogHub for Windows</a></dd>
+          <dd><a href="#">DogHub for Eclipse</a></dd>
+          <dd><a href="#">DogHub mobile apps</a></dd>
+        </dl>
+
+        <dl class="footer-nav">
+          <dt>Services</dt>
+          <dd><a href="#">Gauges: Web analytics</a></dd>
+          <dd><a href="#">Speaker Deck: Presentations</a></dd>
+          <dd><a href="#">Gist: Code snippets</a></dd>
+          <dd><a href="#">Job board</a></dd>
+        </dl>
+
+        <dl class="footer-nav">
+          <dt>Documentation</dt>
+          <dd><a href="#">DogHub Help</a></dd>
+          <dd><a href="#">Developer API</a></dd>
+          <dd><a href="#">DogHub Flavored Markdown</a></dd>
+          <dd><a href="#">DogHub Pages</a></dd>
+        </dl>
+
+        <dl class="footer-nav">
+          <dt>More</dt>
+          <dd><a href="#">Training</a></dd>
+          <dd><a href="#">Students &amp teachers</a></dd>
+          <dd><a href="#">The Shop</a></dd>
+          <dd><a href="#">Plans &amp pricing</a></dd>
+          <dd><a href="#">The Octodex</a></dd>
+        </dl>
+
+        <hr class="footer-divider">
+
+        <p class="footer-right">© 2013 DogHub, Inc. All rights reserved.</p>
+
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+
+
+      </div>
+    </footer>
+
+  </body>
+</html>

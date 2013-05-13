@@ -1,0 +1,195 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+body {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif;
+  line-height: 1.4;
+}
+
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0;
+  margin-bottom: -268px;
+}
+
+.header {
+  background: none;
+  padding: 10px 0;
+  text-shadow: 0 1px 0 #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.container {
+  display: block;
+  width: 920px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+.header-logo-wordmark {
+  position: relative;
+  float: left;
+  margin: 9px 10px 9px 0;
+  width: 94px;
+  height: 30px;
+  font-size: 25px;
+  color: black;
+  /*text-indent: -999px;*/
+}
+
+.header-actions {
+  float: right;
+  margin-top: 6px;
+}
+
+.button {
+  margin-left: 5px;
+/*  padding-left: 12px;
+  padding-right: 12px;*/
+  box-shadow: 0 1px 0 #fff;
+  outline: none;
+
+  position: relative;
+  display: inline-block;
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+  white-space: nowrap;
+  background-color: #eaeaea;
+/*  background-image: -moz-linear-gradient(#fafafa, #eaeaea);
+  background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+  background-image: linear-gradient(#fafafa, #eaeaea);*/
+  background-repeat: repeat-x;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  border-bottom-color: #c5c5c5;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  vertical-align: middle;
+  cursor: pointer;
+/*  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;*/
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.command-bar {
+  width: 710px;
+  margin-top: 10px;
+  margin-left: 15px;
+  position: relative;
+  float: left;
+}
+
+.top-nav {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+/*  transition: opacity 0.2s linear;
+  -webkit-transition: opacity 0.2s linear 0;*/
+  opacity: 1;
+  z-index: 1;
+  margin-top: 0px;
+  margin-right: 0;
+  right: 0;
+  float: left;
+  list-style: none;
+  font-size: 14px;
+}
+
+.top-nav li {
+  float: left;
+  font-size: 14px;
+}
+
+.top-nav a {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.top-nav li a {
+  display: block;
+  padding: 5px;
+  margin-left: 5px;
+  color: #333333;
+  font-weight: bold;
+  /*transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in 0;*/
+}
+
+.command-bar-form {
+  position: relative;
+  z-index: 95;
+  width: 200px;
+  padding-right: 35px;
+  /*transition: width 0.2s ease-in-out;
+  -webkit-transition: width 0.2s ease-in-out 0;*/
+}
+
+.advanced-search-icon {
+  position: absolute;
+  top: 0;
+  right: 6px;
+  padding: 5px 5px 6px;
+  color: #333;
+  /*transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in 0;*/
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(0,0,0,0.75)));
+}
+
+.mini-icon {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  font-family: 'Octicons Regular';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  /*text-decoration: inherit;*/
+  line-height: 1;
+  /*-webkit-font-smoothing: antialiased;*/
+  line-height: 1;
+  text-decoration: none;
+}
+
+.command-bar input[type="text"] {
+  position: relative;
+  /*-moz-box-sizing: border-box;*/
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 28px;
+  padding: 4px 20px 4px 8px;
+  font-size: 12px;
+}
+
+.command-bar .help {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 44px;
+  width: 12px;
+  height: auto;
+  line-height: 24px;
+  z-index: 96;
+  color: #999;
+}
+
+.command-bar .mini-icon-help {
+  font-size: 12px;
+  cursor: pointer;
+}
