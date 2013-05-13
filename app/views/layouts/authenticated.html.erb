@@ -1,16 +1,237 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Doghub</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title>DogHub</title>
+  <%= stylesheet_link_tag    "authenticated", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
   <body>
+    <header>
+      <div class="header">
+        <a class="title" href="#">DogHub</a>
+      </div>
 
+      <div class="commandbar2">
+        <input class="search" type="text" name="q" placeholder="Search or type a command" tabindex="1">
+      </div>
 
+      <div class="nav-div">
+        <ul class="nav">
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Gist</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </header>
 
-  <%= yield %>
+    <div class="dashboard">
+      <div class="dashboard-content">
+        <div class="account">
+          <span class="button2">
+            <span class="username">merhard</span>
+          </span>
+        </div>
+
+        <ul class="tabs">
+          <li><a href="#" class="selected">News Feed</a></li>
+          <li><a href="#">Pull Requests</a></li>
+          <li><a href="#">Issues</a></li>
+          <li><a href="#">Stars</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rest-of-page">
+      <div class="bootcamp">
+        <h1>DogHub Bootcamp  <span>If you are still new to things, we’ve provided a few walkthroughs to get you started.</span></h1>
+
+        <div class="bootcamp-notices">
+          <ul>
+            <li class="setup">
+              <a href="">
+                <div class="image"></div>
+
+                <div class="desc">
+                  <h2>Set Up</h2>
+                  <p>A quick guide to help your dog get started.</p>
+                </div>
+
+                <span class="step one"></span>
+              </a>
+            </li>
+
+            <li class="create">
+              <a href="">
+                <div class="image"></div>
+
+                <div class="desc">
+                  <h2>Create A Repository</h2>
+                  <p>Create the place where your dog's commits will be stored.</p>
+                </div>
+
+                <span class="step two"></span>
+              </a>
+            </li>
+
+            <li class="fork">
+              <a href="">
+                <div class="image"></div>
+
+                <div class="desc">
+                  <h2>Fork a Repository</h2>
+                  <p>Copy another dog's rep to create a new, unique project from its contents.</p>
+                </div>
+
+                <span class="step three"></span>
+              </a>
+            </li>
+
+            <li class="social">
+              <a href="">
+                <div class="image"></div>
+
+                <div class="desc">
+                  <h2>Be social</h2>
+                  <p>Sniff out a friend.<br>Watch a project.</p>
+                </div>
+
+                <span class="step four"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="notifications">
+        <div class="news">
+          <div class="alert follow simple">
+            <div class="body">
+              <div class="title2">
+                <a href="#">dog7</a>
+                <span>started following</span>
+                <a href="#">merhard</a>
+              </div>
+
+              <div class="time">1 day ago</div>
+            </div>
+          </div>
+
+          <div class="alert follow simple">
+            <div class="body">
+              <div class="title2">
+                <a href="#">dog6</a>
+                <span>started following</span>
+                <a href="#">merhard</a>
+              </div>
+
+              <div class="time">2 days ago</div>
+            </div>
+          </div>
+
+          <div class="alert follow simple">
+            <div class="body">
+              <div class="title2">
+                <a href="#">dog5</a>
+                <span>started following</span>
+                <a href="#">merhard</a>
+              </div>
+
+              <div class="time">3 days ago</div>
+            </div>
+          </div>
+
+          <div class="alert follow simple">
+            <div class="body">
+              <div class="title2">
+                <a href="#">dog4</a>
+                <span>started following</span>
+                <a href="#">merhard</a>
+              </div>
+
+              <div class="time">4 days ago</div>
+            </div>
+          </div>
+
+          <div class="alert follow simple">
+            <div class="body">
+              <div class="title2">
+                <a href="#">dog3</a>
+                <span>started following</span>
+                <a href="#">merhard</a>
+              </div>
+
+              <div class="time">5 days ago</div>
+            </div>
+          </div>
+
+          <div class="alert follow simple">
+            <div class="body">
+              <div class="title2">
+                <a href="#">dog2</a>
+                <span>started following</span>
+                <a href="#">merhard</a>
+              </div>
+
+              <div class="time">6 day ago</div>
+            </div>
+          </div>
+
+          <div class="alert follow simple">
+            <div class="body">
+              <div class="title2">
+                <a href="#">dog1</a>
+                <span>started following</span>
+                <a href="#">merhard</a>
+              </div>
+
+              <div class="time">1 week ago</div>
+            </div>
+          </div>
+
+          <div class="alert dog_hub">
+            <div class="body">
+              <div class="title2">Welcome to DogHub! What's next?</div>
+
+              <div class="details">
+                <div class="message">
+                  <ul>
+                    <li><a href="#">Create a Repository</a></li>
+                    <li><a href="#">Tell us about yourself</a></li>
+                    <li><a href="#">Browse Interesting Repos</a></li>
+                    <li><a href="#">Follow <em>@doghub</em> on Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <div class="repos">
+            <div class="top">
+              <a href="#" class="new-repo minibutton">New repository</a>
+              <h2>Your repositories <em>(1)</em></h2>
+            </div>
+
+            <div class="filter">
+              <input type="text" class="filter-input" placeholder="Find a repository..." tabindex="2">
+
+              <ul class="repo-filterer">
+                <li class="all_repos"><a href="#" class="repo-filter selected-filter">All Repositories</a></li>
+                <li><a href="#" class="repo-filter">Public</a></li>
+                <li><a href="#" class="repo-filter">Private</a></li>
+                <li><a href="#" class="repo-filter">Sources</a></li>
+                <li><a href="#" class="repo-filter">Forks</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%= yield %>
 
   </body>
 </html>
